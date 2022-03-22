@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inventário</title>
+	<script type="text/javascript">
+		
+
+		var drofo = [];
+		var topper = [];
+
+
+		//Drofo terá um anel da invisibilidade, dois pares de botas mágicas, uma poção do sono e duas poções da inocência
+
+		drofo.push(
+			"anel da invisibilidade", 
+			"botas mágicas", 
+			"botas mágicas", 
+			"poção do sono", 
+			"poção da inocência",
+			 "poção da inocência" );
+
+		//Topper terá uma capa da invisibilidade, uma pedra do despertar,  uma varinha das varinhas, uma poção da inocência e duas poções da mentira, poção anti-inteligência
+
+		topper.push(
+
+			 "capa da invisibilidade",
+			  "pedra do despertar" ,
+			  "varinha das varinhas" ,
+			   "poção da inocência",
+			   "poção da mentira",
+			   "poção da mentira",
+			    "poção anti-inteligência");
+
+		//No meio de sua jornada, Topper consumiu uma das poções da mentira
+		topper.splice(topper.indexOf('poção da mentira'), 1);
+		//perdeu sua pedra
+		topper.splice(topper.indexOf('pedra do despertar'), 1);
+		//ganhou um par de botar mágicas do Drofo
+		drofo.splice(drofo.indexOf('botas mágicas'), 1);
+		topper.push('botas mágicas');
+		//achou um escudo mágico e uma espada mágica
+		topper.push('escudo mágico');
+		topper.push('espada mágica');
+
+
+		//No meio da sua jornada, Drofo, ganhou mais uma bota mágica	
+		drofo.push('botas mágicas');
+		// usou sua poção do sono
+		drofo.splice(drofo.indexOf('poção do sono'), 1);
+		//consumiu a poção anti-inteligência do Topper
+		topper.splice(topper.indexOf('poção anti-inteligência'), 1);
+
+		//encontrou um ovo de dragão e uma coxinha.
+		drofo.push('ovo de dragão');
+		drofo.push('coxinha');
+
+	
+
+		document.write("Topper: </br>" + topper + "</br></br>" + "Drofo: </br>" + drofo);
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
